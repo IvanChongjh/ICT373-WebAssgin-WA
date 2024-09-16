@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question One</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!-- Use JavaScript and HTML to write a web page which collects the user's name, phone number (with
+any prefix codes), birth date, and favourite pastime (Surfing the Web, Playing Sport, Listening to
+Music, Watching TV, Playing Games, Community Service, Daydreaming, Reading, or Meditation
+only) and sends them off to a server. Make some reasonable assumptions about the content and format
+of these data and enforce the assumptions from within your page. The address of the test CGI
+destination is http://www.it.murdoch.edu.au/cgi-bin/reply1.pl.
+Note, for the birth date: you need to validate the date, month and year. Do not use a Date Object,
+check for other data integrity issues e.g., leap year and future dates. -->
+
+        <!-- The documentation for Question 1 is to include:
+• External documentation consisting of
+(a) a brief description of the problem
+(b) a description of your solution approach including structured design/pseudo-code for
+the Javascript specific code
+(c) proof of testing and sample results
+The above external documentation should be saved in a file in PDF format 
+• the web page source code files-->
+
+
+        <div id = 'intro'>
+            <p>Question One</p>
+        </div>
+
+        <div id = "info">
+                 
+        <form  methods="get" action="http://www.it.murdoch.edu.au/cgi-bin/reply1.pl" >
+                
+                <label for ="name">Name:</label>
+                <input type="text" id ="name" name = "name" value="">
+                <br>
+                <label for ="birthdate">Birthdate:</label>
+                <input type="date" id ="date" name ="date" values ="">
+                <br>
+                <label for ="FavouritePastTime">Favourite Paste Time:</label>
+                <select id="cars" name="cars">
+                    <option value="SurfingTheWeb">Surfing The Web</option>
+                    <option value="Play Sport">Play Sport</option>
+                    <option value="Listening To Music">Listening To Music</option>
+                    <option value="Watching TV">Audi</option>
+                  </select>
+
+
+        </form>
+        </div>
+
+
+    
+<script src="scripts.js"></script> 
+
+</body>
+</html>
